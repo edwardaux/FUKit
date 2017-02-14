@@ -13,6 +13,8 @@
 		BFFE79C51E52CE5D00B1629A /* FUWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFE79C41E52CE5D00B1629A /* FUWindow.swift */; };
 		BFFE79C71E52CE6800B1629A /* FUApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFE79C61E52CE6800B1629A /* FUApplication.swift */; };
 		BFFE79C91E52CF4000B1629A /* FUResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFE79C81E52CF4000B1629A /* FUResponder.swift */; };
+		BFFE79CB1E52D05E00B1629A /* FUView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFE79CA1E52D05E00B1629A /* FUView.swift */; };
+		BFFE79CD1E52D12D00B1629A /* FUColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFE79CC1E52D12D00B1629A /* FUColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,6 +39,8 @@
 		BFFE79C41E52CE5D00B1629A /* FUWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FUWindow.swift; sourceTree = "<group>"; };
 		BFFE79C61E52CE6800B1629A /* FUApplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FUApplication.swift; sourceTree = "<group>"; };
 		BFFE79C81E52CF4000B1629A /* FUResponder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FUResponder.swift; sourceTree = "<group>"; };
+		BFFE79CA1E52D05E00B1629A /* FUView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FUView.swift; sourceTree = "<group>"; };
+		BFFE79CC1E52D12D00B1629A /* FUColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FUColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +78,8 @@
 				BFFE79C41E52CE5D00B1629A /* FUWindow.swift */,
 				BFFE79C61E52CE6800B1629A /* FUApplication.swift */,
 				BFFE79C81E52CF4000B1629A /* FUResponder.swift */,
+				BFFE79CA1E52D05E00B1629A /* FUView.swift */,
+				BFFE79CC1E52D12D00B1629A /* FUColor.swift */,
 				BFFE79BF1E52CE1E00B1629A /* Simulator.h */,
 				BFFE79C01E52CE1E00B1629A /* Simulator.m */,
 				BFFE79BE1E52CE1D00B1629A /* FUKit-Bridging-Header.h */,
@@ -143,8 +149,10 @@
 			files = (
 				BFFE79C51E52CE5D00B1629A /* FUWindow.swift in Sources */,
 				BFFE79C71E52CE6800B1629A /* FUApplication.swift in Sources */,
+				BFFE79CD1E52D12D00B1629A /* FUColor.swift in Sources */,
 				BFFE79C31E52CE5200B1629A /* FUEvent.swift in Sources */,
 				BFFE79C91E52CF4000B1629A /* FUResponder.swift in Sources */,
+				BFFE79CB1E52D05E00B1629A /* FUView.swift in Sources */,
 				BFFE79C11E52CE1E00B1629A /* Simulator.m in Sources */,
 				BFFE79B81E52CE1400B1629A /* main.swift in Sources */,
 			);

@@ -11,10 +11,13 @@ import Foundation
 class FUWindow : FUResponder {
 	var frame: NSRect
 	var firstResponder: FUResponder?
+	var contentView: FUView
 	
 	init(frame: NSRect) {
 		self.frame = frame
+		self.contentView = FUView(frame: frame)
 		super.init()
+		self.contentView.nextResponder = self
 		self.firstResponder = self
 	}
 	
@@ -28,6 +31,6 @@ class FUWindow : FUResponder {
 	}
 	
 	func update() {
-		fuGraphicsDrawRect(self.frame, 0.0, 1.0, 0.0, 1.0)
+		self.contentView.displayIfNeeded()
 	}
 }
