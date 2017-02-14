@@ -8,10 +8,7 @@
 
 import Foundation
 
-fuGraphicsSetup()
-fuGraphicsSetDisplayFunction {
-	let rect = NSRect(x: 100, y: 100, width: 200, height: 200)
-	fuGraphicsDrawRect(rect, 0.0, 1.0, 0.0, 1.0)
-}
-fuGraphicsRun()
+let app = FUApplication.shared
+app.addWindow(window: FUWindow())
+app.run()
 

@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		BFFE79B81E52CE1400B1629A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFE79B71E52CE1400B1629A /* main.swift */; };
 		BFFE79C11E52CE1E00B1629A /* Simulator.m in Sources */ = {isa = PBXBuildFile; fileRef = BFFE79C01E52CE1E00B1629A /* Simulator.m */; };
+		BFFE79C31E52CE5200B1629A /* FUEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFE79C21E52CE5200B1629A /* FUEvent.swift */; };
+		BFFE79C51E52CE5D00B1629A /* FUWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFE79C41E52CE5D00B1629A /* FUWindow.swift */; };
+		BFFE79C71E52CE6800B1629A /* FUApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFE79C61E52CE6800B1629A /* FUApplication.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +32,9 @@
 		BFFE79BE1E52CE1D00B1629A /* FUKit-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FUKit-Bridging-Header.h"; sourceTree = "<group>"; };
 		BFFE79BF1E52CE1E00B1629A /* Simulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Simulator.h; sourceTree = "<group>"; };
 		BFFE79C01E52CE1E00B1629A /* Simulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Simulator.m; sourceTree = "<group>"; };
+		BFFE79C21E52CE5200B1629A /* FUEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FUEvent.swift; sourceTree = "<group>"; };
+		BFFE79C41E52CE5D00B1629A /* FUWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FUWindow.swift; sourceTree = "<group>"; };
+		BFFE79C61E52CE6800B1629A /* FUApplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FUApplication.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +68,9 @@
 			isa = PBXGroup;
 			children = (
 				BFFE79B71E52CE1400B1629A /* main.swift */,
+				BFFE79C21E52CE5200B1629A /* FUEvent.swift */,
+				BFFE79C41E52CE5D00B1629A /* FUWindow.swift */,
+				BFFE79C61E52CE6800B1629A /* FUApplication.swift */,
 				BFFE79BF1E52CE1E00B1629A /* Simulator.h */,
 				BFFE79C01E52CE1E00B1629A /* Simulator.m */,
 				BFFE79BE1E52CE1D00B1629A /* FUKit-Bridging-Header.h */,
@@ -129,6 +138,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFFE79C51E52CE5D00B1629A /* FUWindow.swift in Sources */,
+				BFFE79C71E52CE6800B1629A /* FUApplication.swift in Sources */,
+				BFFE79C31E52CE5200B1629A /* FUEvent.swift in Sources */,
 				BFFE79C11E52CE1E00B1629A /* Simulator.m in Sources */,
 				BFFE79B81E52CE1400B1629A /* main.swift in Sources */,
 			);
