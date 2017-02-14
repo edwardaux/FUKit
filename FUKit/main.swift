@@ -8,5 +8,10 @@
 
 import Foundation
 
-print("Hello, World!")
+fuGraphicsSetup()
+fuGraphicsSetDisplayFunction {
+	let rect = NSRect(x: 100, y: 100, width: 200, height: 200)
+	fuGraphicsDrawRect(rect, 0.0, 1.0, 0.0, 1.0)
+}
+fuGraphicsRun()
 

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BFFE79B81E52CE1400B1629A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFE79B71E52CE1400B1629A /* main.swift */; };
+		BFFE79C11E52CE1E00B1629A /* Simulator.m in Sources */ = {isa = PBXBuildFile; fileRef = BFFE79C01E52CE1E00B1629A /* Simulator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,9 @@
 /* Begin PBXFileReference section */
 		BFFE79B41E52CE1400B1629A /* FUKit */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FUKit; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFFE79B71E52CE1400B1629A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		BFFE79BE1E52CE1D00B1629A /* FUKit-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FUKit-Bridging-Header.h"; sourceTree = "<group>"; };
+		BFFE79BF1E52CE1E00B1629A /* Simulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Simulator.h; sourceTree = "<group>"; };
+		BFFE79C01E52CE1E00B1629A /* Simulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Simulator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,9 @@
 			isa = PBXGroup;
 			children = (
 				BFFE79B71E52CE1400B1629A /* main.swift */,
+				BFFE79BF1E52CE1E00B1629A /* Simulator.h */,
+				BFFE79C01E52CE1E00B1629A /* Simulator.m */,
+				BFFE79BE1E52CE1D00B1629A /* FUKit-Bridging-Header.h */,
 			);
 			path = FUKit;
 			sourceTree = "<group>";
@@ -95,6 +102,7 @@
 					BFFE79B31E52CE1400B1629A = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 52FL8RJNNL;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -121,6 +129,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFFE79C11E52CE1E00B1629A /* Simulator.m in Sources */,
 				BFFE79B81E52CE1400B1629A /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,8 +228,12 @@
 		BFFE79BC1E52CE1400B1629A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 52FL8RJNNL;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FUKit/FUKit-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -228,8 +241,11 @@
 		BFFE79BD1E52CE1400B1629A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 52FL8RJNNL;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FUKit/FUKit-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
