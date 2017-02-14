@@ -8,19 +8,22 @@
 
 import Foundation
 
-class FUWindow {
+class FUWindow : FUResponder {
 	var frame: NSRect
+	var firstResponder: FUResponder?
 	
 	init(frame: NSRect) {
 		self.frame = frame
+		super.init()
+		self.firstResponder = self
 	}
 	
 	func send(event: FUEvent) {
 		switch event.type {
 		case .motion:
-			print(event)
+			let _ = self.firstResponder?.tryToPerform(event: event)
 		case .touch:
-			print(event)
+			let _ = self.firstResponder?.tryToPerform(event: event)
 		}
 	}
 	

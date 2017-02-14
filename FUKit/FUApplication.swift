@@ -8,13 +8,13 @@
 
 import Foundation
 
-class FUApplication  {
+class FUApplication : FUResponder {
 	static let shared = FUApplication()
 	
 	private var windows = [FUWindow]()
 	private var eventQueue = [FUEvent]()
 	
-	init() {
+	override init() {
 		fuGraphicsSetup()
 		fuGraphicsSetTouchBeganFunction { (x, y) in
 			if let window = FUApplication.shared.windowForPoint(x: x, y: y) {
@@ -42,6 +42,7 @@ class FUApplication  {
 	
 	func addWindow(window: FUWindow) {
 		self.windows.append(window)
+		window.nextResponder = self
 	}
 	
 	func post(event: FUEvent) {
