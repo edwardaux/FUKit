@@ -47,9 +47,18 @@ let lines = [
 let sprite = FUSprite(frame: NSRect(x: 10, y: 10, width: 20, height: 20), sprite: lines)
 window3.contentView.addSubview(view: sprite)
 
+let window4 = FUWindow(frame: NSRect(x: 210, y: 10, width: 150, height: 150))
+let button = FUButton(frame: NSRect(x: 50, y: 50, width: 50, height: 20))
+button.backgroundColor = .magenta
+button.action = {
+	window4.contentView.backgroundColor = .cyan
+}
+window4.contentView.addSubview(view: button)
+
 let app = FUApplication.shared
 app.addWindow(window: window1)
 app.addWindow(window: window2)
 app.addWindow(window: window3)
+app.addWindow(window: window4)
 app.run()
 

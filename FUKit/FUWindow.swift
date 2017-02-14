@@ -25,8 +25,10 @@ class FUWindow : FUResponder {
 		switch event.type {
 		case .motion:
 			let _ = self.firstResponder?.tryToPerform(event: event)
-		case .touch:
-			let _ = self.firstResponder?.tryToPerform(event: event)
+		case .touch(let x, let y):
+			if let view = self.contentView.hitTest(point: NSPoint(x: x, y: y)) {
+				let _ = view.tryToPerform(event: event)
+			}
 		}
 	}
 	
