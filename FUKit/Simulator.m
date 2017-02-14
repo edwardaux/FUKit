@@ -13,7 +13,7 @@
 #pragma GCC diagnostic push
 #pragma GCC diagnostic ignored "-Wdeprecated-declarations"
 
-#define LANDSCAPE 0
+#define LANDSCAPE 1
 
 #if LANDSCAPE
 	#define WIDTH  736

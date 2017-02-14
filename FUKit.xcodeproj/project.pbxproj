@@ -17,6 +17,7 @@
 		BFFE79CD1E52D12D00B1629A /* FUColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFE79CC1E52D12D00B1629A /* FUColor.swift */; };
 		BFFE79CF1E52D1AF00B1629A /* FUSprite.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFE79CE1E52D1AF00B1629A /* FUSprite.swift */; };
 		BFFE79D11E52D23400B1629A /* FUButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFE79D01E52D23400B1629A /* FUButton.swift */; };
+		BFFE79D31E52D36600B1629A /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFE79D21E52D36600B1629A /* Game.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -45,6 +46,7 @@
 		BFFE79CC1E52D12D00B1629A /* FUColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FUColor.swift; sourceTree = "<group>"; };
 		BFFE79CE1E52D1AF00B1629A /* FUSprite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FUSprite.swift; sourceTree = "<group>"; };
 		BFFE79D01E52D23400B1629A /* FUButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FUButton.swift; sourceTree = "<group>"; };
+		BFFE79D21E52D36600B1629A /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				BFFE79CC1E52D12D00B1629A /* FUColor.swift */,
 				BFFE79CE1E52D1AF00B1629A /* FUSprite.swift */,
 				BFFE79D01E52D23400B1629A /* FUButton.swift */,
+				BFFE79D21E52D36600B1629A /* Game.swift */,
 				BFFE79BF1E52CE1E00B1629A /* Simulator.h */,
 				BFFE79C01E52CE1E00B1629A /* Simulator.m */,
 				BFFE79BE1E52CE1D00B1629A /* FUKit-Bridging-Header.h */,
@@ -159,6 +162,7 @@
 				BFFE79CD1E52D12D00B1629A /* FUColor.swift in Sources */,
 				BFFE79C31E52CE5200B1629A /* FUEvent.swift in Sources */,
 				BFFE79C91E52CF4000B1629A /* FUResponder.swift in Sources */,
+				BFFE79D31E52D36600B1629A /* Game.swift in Sources */,
 				BFFE79CF1E52D1AF00B1629A /* FUSprite.swift in Sources */,
 				BFFE79CB1E52D05E00B1629A /* FUView.swift in Sources */,
 				BFFE79C11E52CE1E00B1629A /* Simulator.m in Sources */,
