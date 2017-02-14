@@ -21,8 +21,35 @@ view3.backgroundColor = .black
 view2.addSubview(view: view3)
 window2.contentView.addSubview(view: view2)
 
+let window3 = FUWindow(frame: NSRect(x: 10, y: 210, width: 150, height: 150))
+let lines = [
+	"BBBBBBBBBBBBBBBBBBBB",
+	"BBBBBBBBBBBBBBBBBBBB",
+	"BBBBBBBBBBBBBBBBBBBB",
+	"BBBBBBBBBBBBBBBBBBBB",
+	"BBBBBBBBBBBBBBBBBBBB",
+	"BBBBBBBBBBBBBBBBBBBB",
+	"MMMMMM--------MMMMMM",
+	"MMMMMM--------MMMMMM",
+	"MMMMMM--------MMMMMM",
+	"MMMMMM--------MMMMMM",
+	"MMMMMM--------MMMMMM",
+	"MMMMMM--------MMMMMM",
+	"MMMMMM--------MMMMMM",
+	"MMMMMM--------MMMMMM",
+	"CCCCCCCCCCCCCCCCCCCC",
+	"CCCCCCCCCCCCCCCCCCCC",
+	"CCCCCCCCCCCCCCCCCCCC",
+	"CCCCCCCCCCCCCCCCCCCC",
+	"CCCCCCCCCCCCCCCCCCCC",
+	"CCCCCCCCCCCCCCCCCCCC"
+]
+let sprite = FUSprite(frame: NSRect(x: 10, y: 10, width: 20, height: 20), sprite: lines)
+window3.contentView.addSubview(view: sprite)
+
 let app = FUApplication.shared
 app.addWindow(window: window1)
 app.addWindow(window: window2)
+app.addWindow(window: window3)
 app.run()
 
