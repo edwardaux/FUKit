@@ -51,7 +51,9 @@ let window4 = FUWindow(frame: NSRect(x: 210, y: 10, width: 150, height: 150))
 let button = FUButton(frame: NSRect(x: 50, y: 50, width: 50, height: 20))
 button.backgroundColor = .magenta
 button.action = {
-	window4.contentView.backgroundColor = .cyan
+	FUView.animateWithDuration(1.0) {
+		view1.frame = NSRect(x: 50, y: 120, width: 5, height: 5)
+	}
 }
 window4.contentView.addSubview(view: button)
 

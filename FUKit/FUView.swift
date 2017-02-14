@@ -10,13 +10,31 @@
 import Foundation
 
 class FUView : FUResponder {
-	var frame: NSRect
+
+	static var animationDuration: TimeInterval = 0
+	
+	var privateFrame: NSRect
+	var frame: NSRect {
+		get {
+			return self.privateFrame
+		}
+		set {
+			if FUView.animationDuration == 0 {
+				self.privateFrame = newValue
+			}
+			else {
+				self.animateFrame(to: newValue, duration: FUView.animationDuration)
+			}
+		}
+	}
+	
+	
 	var superview: FUView?
 	var subviews: [FUView]
 	var backgroundColor: FUColor
 	
 	init(frame: NSRect) {
-		self.frame = frame
+		self.privateFrame = frame
 		self.subviews = []
 		self.backgroundColor = .white
 	}
@@ -79,4 +97,34 @@ extension FUView : Equatable {
 		return lhs.frame == rhs.frame
 	}
 }
+
+extension FUView {
+	public static func animateWithDuration(_ duration: TimeInterval, animations: () -> Void) {
+		FUView.animationDuration = duration
+		animations()
+	}
+	
+	func animateFrame(to target: NSRect, duration: TimeInterval) {
+		let sleepInterval = 0.01
+		let count: Int = Int(duration / sleepInterval)
+		let incrementX = (target.origin.x - self.frame.origin.x) / CGFloat(count)
+		let incrementY = (target.origin.y - self.frame.origin.y) / CGFloat(count)
+		let incrementWidth = (target.size.width - self.frame.size.width) / CGFloat(count)
+		let incrementHeight = (target.size.height - self.frame.size.height) / CGFloat(count)
+		DispatchQueue.global().async {
+			for _ in 0..<count {
+				Thread.sleep(forTimeInterval: sleepInterval)
+				let newFrame = NSRect(
+					x: self.frame.origin.x + incrementX,
+					y: self.frame.origin.y + incrementY,
+					width: self.frame.size.width + incrementWidth,
+					height: self.frame.size.height + incrementHeight
+				)
+				self.privateFrame = newFrame
+			}
+			FUView.animationDuration = 0
+		}
+	}
+}
+
 
