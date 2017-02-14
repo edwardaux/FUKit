@@ -17,7 +17,9 @@ class FUApplication  {
 	init() {
 		fuGraphicsSetup()
 		fuGraphicsSetTouchBeganFunction { (x, y) in
-			FUApplication.shared.post(event: FUEvent(type: .touch(x: Int(x), y: Int(y)), window: FUWindow()))
+			if let window = FUApplication.shared.windowForPoint(x: x, y: y) {
+				FUApplication.shared.post(event: FUEvent(type: .touch(x: Int(x), y: Int(y)), window: window))
+			}
 		}
 		fuGraphicsSetDisplayFunction { 
 			FUApplication.shared.runLoopIterate()
@@ -45,4 +47,14 @@ class FUApplication  {
 	func post(event: FUEvent) {
 		self.eventQueue.append(event)
 	}
+	
+	private func windowForPoint(x: Int32, y: Int32) -> FUWindow? {
+		for window in self.windows {
+			if window.frame.contains(CGPoint(x: Int(x), y: Int(y))) {
+				return window
+			}
+		}
+		return nil
+	}
+
 }

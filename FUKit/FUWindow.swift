@@ -9,6 +9,12 @@
 import Foundation
 
 class FUWindow {
+	var frame: NSRect
+	
+	init(frame: NSRect) {
+		self.frame = frame
+	}
+	
 	func send(event: FUEvent) {
 		switch event.type {
 		case .motion:
@@ -19,7 +25,6 @@ class FUWindow {
 	}
 	
 	func update() {
-		let rect = NSRect(x: 100, y: 100, width: 50, height: 50)
-		fuGraphicsDrawRect(rect, 0.0, 1.0, 0.0, 1.0)
+		fuGraphicsDrawRect(self.frame, 0.0, 1.0, 0.0, 1.0)
 	}
 }

@@ -9,6 +9,6 @@
 import Foundation
 
 let app = FUApplication.shared
-app.addWindow(window: FUWindow())
+app.addWindow(window: FUWindow(frame: NSRect(x: 10, y: 10, width: 150, height: 150)))
 app.run()
 
