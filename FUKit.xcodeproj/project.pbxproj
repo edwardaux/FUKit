@@ -64,6 +64,7 @@
 		BFFE79AB1E52CE1400B1629A = {
 			isa = PBXGroup;
 			children = (
+				BFEEF44E1E557D9700A421DF /* readme.md */,
 				BFFE79B61E52CE1400B1629A /* FUKit */,
 				BFFE79B51E52CE1400B1629A /* Products */,
 			);
@@ -80,7 +81,6 @@
 		BFFE79B61E52CE1400B1629A /* FUKit */ = {
 			isa = PBXGroup;
 			children = (
-				BFEEF44E1E557D9700A421DF /* readme.md */,
 				BFFE79B71E52CE1400B1629A /* main.swift */,
 				BFFE79C21E52CE5200B1629A /* FUEvent.swift */,
 				BFFE79C41E52CE5D00B1629A /* FUWindow.swift */,
