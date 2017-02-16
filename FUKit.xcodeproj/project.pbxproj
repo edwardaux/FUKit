@@ -33,6 +33,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		BFEEF44E1E557D9700A421DF /* readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
 		BFFE79B41E52CE1400B1629A /* FUKit */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FUKit; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFFE79B71E52CE1400B1629A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		BFFE79BE1E52CE1D00B1629A /* FUKit-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FUKit-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -79,6 +80,7 @@
 		BFFE79B61E52CE1400B1629A /* FUKit */ = {
 			isa = PBXGroup;
 			children = (
+				BFEEF44E1E557D9700A421DF /* readme.md */,
 				BFFE79B71E52CE1400B1629A /* main.swift */,
 				BFFE79C21E52CE5200B1629A /* FUEvent.swift */,
 				BFFE79C41E52CE5D00B1629A /* FUWindow.swift */,
@@ -305,6 +307,7 @@
 				BFFE79BD1E52CE1400B1629A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
